@@ -385,13 +385,14 @@ GameObject:
   - component: {fileID: 1101210887}
   - component: {fileID: 1101210886}
   - component: {fileID: 1101210885}
+  - component: {fileID: 1101210890}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1101210885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +498,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1101210890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101210884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d773f0db313b0b4ab4a1085816201d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransformTranslate
 --- !u!1 &1762463478
 GameObject:
   m_ObjectHideFlags: 0
