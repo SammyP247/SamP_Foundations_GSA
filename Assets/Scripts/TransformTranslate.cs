@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class TransformTranslate : MonoBehaviour
 {
+    public float movementSpeed;
+
+    public float rotationSpeed;
+
     void Start()
     {
         
@@ -9,7 +13,7 @@ public class TransformTranslate : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        /*if (Input.GetKeyDown(KeyCode.S))
         {
             transform.Translate(0,0,1);
             Debug.Log("S Key Pressed");
@@ -31,6 +35,37 @@ public class TransformTranslate : MonoBehaviour
         {
             transform.Translate(1,0,0);
             Debug.Log("D Key Pressed");
+        }*/
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.Translate(transform.forward*movementSpeed*Time.deltaTime);
         }
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.Translate(-transform.forward*movementSpeed*Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(-transform.right*movementSpeed*Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Translate(transform.right*movementSpeed*Time.deltaTime);
+        }
+
+        if(Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(transform.up*rotationSpeed*Time.deltaTime);
+        }
+
+        if(Input.GetKey(KeyCode.R))
+        {
+            transform.Rotate(-transform.up*rotationSpeed*Time.deltaTime);
+        }
+
     }
 }
