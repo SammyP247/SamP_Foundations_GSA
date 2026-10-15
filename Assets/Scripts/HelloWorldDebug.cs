@@ -2,9 +2,13 @@ using UnityEngine;
 //This script is for a Debg Log Statement
 public class HelloWorldDebug : MonoBehaviour
 {
-    
-    void Start()
+    void OnEnable()
     {
-        Debug.Log("Hello World");
+      Debug.Log("Hello World");
+    }
+
+     void OnDisable()
+    {
+      Debug.Log("Goodbye World");
     }
 }
