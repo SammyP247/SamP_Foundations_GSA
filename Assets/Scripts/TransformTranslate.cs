@@ -59,12 +59,12 @@ public class TransformTranslate : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(transform.up*rotationSpeed*Time.deltaTime);
+            transform.Rotate(-transform.up*rotationSpeed*Time.deltaTime);
         }
 
         if(Input.GetKey(KeyCode.R))
         {
-            transform.Rotate(-transform.up*rotationSpeed*Time.deltaTime);
+            transform.Rotate(transform.up*rotationSpeed*Time.deltaTime);
         }
 
     }
