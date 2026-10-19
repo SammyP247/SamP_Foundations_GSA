@@ -39,12 +39,12 @@ public class TransformTranslate : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(transform.forward*movementSpeed*Time.deltaTime);
+            transform.Translate(-transform.forward*movementSpeed*Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(-transform.forward*movementSpeed*Time.deltaTime);
+            transform.Translate(transform.forward*movementSpeed*Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.A))
