@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
 
     public float speed; //changes player speed
-    public float gravity = -9.81f; //Earth's gravitational force being used for the game's gravity force.
+    public float gravity; //Earth's gravitational force being used for the game's gravity force.
     public float jumpHeight; //how high the player will jump.
 
     public Transform groundCheck; //reference for ground check object.
