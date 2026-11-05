@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
-        velocity.y += gravity * Time.deltaTime; //increases the up and down (y axis) velocity by the gravity (9.81) established.
+        velocity.y += gravity * Time.deltaTime; //increases the up and down (y axis) velocity by the gravity established in the inspector.
 
         controller.Move(velocity * Time.deltaTime); //Moves the player based on calculated velocity.
     }
