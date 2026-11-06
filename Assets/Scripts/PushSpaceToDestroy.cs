@@ -12,7 +12,7 @@ public class PushSpaceToDestroy : MonoBehaviour
         {
             //Destroy(gameObject);
 
-            //Destroy(this);//This deestroys the script attached tp the Game Object
+            //Destroy(this);//This destroys the script attached to the Game Object
 
             //Destroy(this.gameObject);//This destroys the Game Object that the script is attached to
 
