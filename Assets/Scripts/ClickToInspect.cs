@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PushEToInspect : MonoBehaviour
+public class CLickToInspect : MonoBehaviour
 {
     public GameObject interaction;
 
