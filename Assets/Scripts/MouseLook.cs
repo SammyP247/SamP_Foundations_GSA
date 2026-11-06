@@ -11,7 +11,7 @@ public class MouseLook : MonoBehaviour
    
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked; //Assures cursor won't leave the game screen and click outside the Game window.
+        //Cursor.lockState = CursorLockMode.Locked; //Assures cursor won't leave the game screen and click outside the Game window.
     }
 
     void Update()
