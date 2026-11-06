@@ -4,14 +4,11 @@ public class PushEToInspect : MonoBehaviour
 {
     public GameObject interaction;
 
-    void Update()
+    void OnMouseDown()
     {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
             if (interaction != null)
             {
                 interaction.SetActive(true);
             }
-        }
     }
 }

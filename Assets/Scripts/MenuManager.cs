@@ -5,7 +5,6 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     public GameObject optionsMenu;
-    public GameObject firstPersonPlayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

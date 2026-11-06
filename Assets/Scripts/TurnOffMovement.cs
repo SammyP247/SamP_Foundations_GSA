@@ -7,8 +7,8 @@ public class TurnOffMovement : MonoBehaviour
     
     void onEnable()
     {
-        mainCamera.GetComponent<MouseLook>().enabled = false;
+        mainCamera.GetComponent<MouseLook>();
 
-        firstPersonPlayer.GetComponent<PlayerMovement>().enabled = false;
+        firstPersonPlayer.GetComponent<PlayerMovement>();
     }
 }
