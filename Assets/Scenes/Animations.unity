@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HollowLog
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7b003e7b74f161d439da62342b743e19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -253,7 +257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &595379623
 Animator:
   serializedVersion: 7
