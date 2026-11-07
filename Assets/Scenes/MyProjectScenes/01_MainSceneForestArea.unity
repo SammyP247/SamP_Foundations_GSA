@@ -1240,6 +1240,7 @@ GameObject:
   - component: {fileID: 94849364}
   - component: {fileID: 94849366}
   - component: {fileID: 94849365}
+  - component: {fileID: 94849367}
   m_Layer: 5
   m_Name: BushInteractFaeFound
   m_TagString: Untagged
@@ -1310,6 +1311,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94849363}
   m_CullTransparentMesh: 1
+--- !u!114 &94849367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94849363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 94849363}
 --- !u!1001 &96158535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6120,6 +6136,66 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 364943555}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1346370445}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1031078832}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &364943558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6799,6 +6875,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5088479799129851726, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+--- !u!4 &387919258 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8041993374760436796, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+  m_PrefabInstance: {fileID: 2076437599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &387919261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387919253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3b8d2592c47014fb66356db320c380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
+  interaction: {fileID: 1842831076}
+  playerCheck: {fileID: 387919258}
+  playerDistance: 3.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &390155410
 GameObject:
   m_ObjectHideFlags: 0
@@ -7060,6 +7159,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &398249159
 MonoBehaviour:
@@ -7606,7 +7729,7 @@ GameObject:
   - component: {fileID: 449206126}
   - component: {fileID: 449206125}
   - component: {fileID: 449206127}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: First Person Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7690,7 +7813,7 @@ GameObject:
   - component: {fileID: 450650964}
   - component: {fileID: 450650967}
   - component: {fileID: 450650968}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -8666,6 +8789,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &473433639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9249,6 +9396,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &512589685
 MonoBehaviour:
@@ -9877,6 +10048,7 @@ GameObject:
   - component: {fileID: 544055464}
   - component: {fileID: 544055466}
   - component: {fileID: 544055465}
+  - component: {fileID: 544055467}
   m_Layer: 5
   m_Name: StoneInteractNothingFound
   m_TagString: Untagged
@@ -9946,6 +10118,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544055463}
   m_CullTransparentMesh: 1
+--- !u!114 &544055467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544055463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 544055463}
 --- !u!1 &551932776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b003e7b74f161d439da62342b743e19, type: 3}
@@ -10098,6 +10285,7 @@ GameObject:
   - component: {fileID: 561138971}
   - component: {fileID: 561138973}
   - component: {fileID: 561138972}
+  - component: {fileID: 561138974}
   m_Layer: 5
   m_Name: MushroomInteractFaeFound
   m_TagString: Untagged
@@ -10168,6 +10356,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561138970}
   m_CullTransparentMesh: 1
+--- !u!114 &561138974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561138970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 561138970}
 --- !u!1 &566744099
 GameObject:
   m_ObjectHideFlags: 0
@@ -10489,7 +10692,7 @@ Animator:
   m_GameObject: {fileID: 603526332}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2d2b2b935037dde4c9afd16957a1b50c, type: 2}
+  m_Controller: {fileID: 9100000, guid: ec17388cca0254e4ea3768dd26a99603, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -11204,6 +11407,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7b003e7b74f161d439da62342b743e19, type: 3}
   m_PrefabInstance: {fileID: 1594814958}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &639431989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639431979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3b8d2592c47014fb66356db320c380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
+  interaction: {fileID: 1549274793}
+  playerCheck: {fileID: 639431986}
+  playerDistance: 3.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &644125153
 GameObject:
   m_ObjectHideFlags: 0
@@ -12720,6 +12941,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &701929763
 MonoBehaviour:
@@ -15364,6 +15609,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5363217172804690495, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+--- !u!4 &837808013 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8812022360989927659, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+  m_PrefabInstance: {fileID: 2076437599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &837808016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837808008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3b8d2592c47014fb66356db320c380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
+  interaction: {fileID: 1798698653}
+  playerCheck: {fileID: 837808013}
+  playerDistance: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &843585042
 GameObject:
   m_ObjectHideFlags: 0
@@ -17151,7 +17419,7 @@ Animator:
   m_GameObject: {fileID: 933036802}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5b0daa5009eeca84abcc8bc67a5909d1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8984fb310bf1683488bb4ccea040e829, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17429,6 +17697,66 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 944723227}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 46939504}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1323855565}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &944723230
 MonoBehaviour:
@@ -17791,6 +18119,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6788814488567637729, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+--- !u!4 &954855897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5329118426482340615, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+  m_PrefabInstance: {fileID: 2076437599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &954855900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954855892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3b8d2592c47014fb66356db320c380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
+  interaction: {fileID: 946285772}
+  playerCheck: {fileID: 954855897}
+  playerDistance: 0
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &956702568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18268,6 +18619,66 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 959914554}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2107584949}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1333928772}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &959914557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18472,7 +18883,7 @@ Animator:
   m_GameObject: {fileID: 980083038}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3865187c708e62347b12a1fd172eb676, type: 2}
+  m_Controller: {fileID: 9100000, guid: 63fe8216f54c18d42af5b29b2960d873, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19188,6 +19599,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &998382619
 MonoBehaviour:
@@ -19911,7 +20346,7 @@ Animator:
   m_GameObject: {fileID: 1028670468}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bcb9c9f1933384748ab9073a388e7d33, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8b6351a1578d28541adb6dacdbebc1a7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -20409,6 +20844,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044379952}
+  - component: {fileID: 1044379953}
   m_Layer: 5
   m_Name: FaeSubmissionScreens
   m_TagString: Untagged
@@ -20439,6 +20875,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1044379953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044379951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 450650963}
 --- !u!1001 &1048755922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22711,7 +23162,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -7645148820635050996, guid: c9bc1b8800c35c8429d30c3078664f5e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1624218469}
   m_SourcePrefab: {fileID: 100100000, guid: c9bc1b8800c35c8429d30c3078664f5e, type: 3}
 --- !u!1 &1190329559 stripped
 GameObject:
@@ -22947,6 +23401,7 @@ GameObject:
   - component: {fileID: 1203515110}
   - component: {fileID: 1203515112}
   - component: {fileID: 1203515111}
+  - component: {fileID: 1203515113}
   m_Layer: 5
   m_Name: BushInteractNothingFound
   m_TagString: Untagged
@@ -23016,6 +23471,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203515109}
   m_CullTransparentMesh: 1
+--- !u!114 &1203515113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203515109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1203515109}
 --- !u!1 &1207587268
 GameObject:
   m_ObjectHideFlags: 0
@@ -24274,6 +24744,30 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1282969364
 MonoBehaviour:
@@ -25920,6 +26414,7 @@ GameObject:
   - component: {fileID: 1348983064}
   - component: {fileID: 1348983066}
   - component: {fileID: 1348983065}
+  - component: {fileID: 1348983067}
   m_Layer: 5
   m_Name: HollowLogInteractFaeFound
   m_TagString: Untagged
@@ -25990,6 +26485,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348983063}
   m_CullTransparentMesh: 1
+--- !u!114 &1348983067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348983063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1348983063}
 --- !u!1001 &1353145791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26709,6 +27219,66 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1384319936}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2128435056}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1978179858}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1384319939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27424,6 +27994,29 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7920838378559803425, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+--- !u!4 &1428839683 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 284863181142341721, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+  m_PrefabInstance: {fileID: 2076437599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1428839686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428839678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3b8d2592c47014fb66356db320c380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
+  interaction: {fileID: 123396426}
+  playerCheck: {fileID: 1428839683}
+  playerDistance: 3.5
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1430609343
 GameObject:
   m_ObjectHideFlags: 0
@@ -29217,6 +29810,7 @@ GameObject:
   - component: {fileID: 1549274794}
   - component: {fileID: 1549274796}
   - component: {fileID: 1549274795}
+  - component: {fileID: 1549274797}
   m_Layer: 5
   m_Name: HollowLogInteractNothingFound
   m_TagString: Untagged
@@ -29286,6 +29880,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549274793}
   m_CullTransparentMesh: 1
+--- !u!114 &1549274797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549274793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1549274793}
 --- !u!1001 &1552595625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29814,6 +30423,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b003e7b74f161d439da62342b743e19, type: 3}
       insertIndex: -1
       addedObject: {fileID: 639431983}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7b003e7b74f161d439da62342b743e19, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 639431989}
   m_SourcePrefab: {fileID: 100100000, guid: 7b003e7b74f161d439da62342b743e19, type: 3}
 --- !u!1001 &1595218271
 PrefabInstance:
@@ -30313,6 +30925,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -951608786083511892, guid: e07589cfd1004054893697e1d299bf84, type: 3}
+--- !u!1 &1624218465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7645148820635050996, guid: c9bc1b8800c35c8429d30c3078664f5e, type: 3}
+  m_PrefabInstance: {fileID: 1182054457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1624218469
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624218465}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3582805594628865998, guid: c9bc1b8800c35c8429d30c3078664f5e, type: 3}
 --- !u!1001 &1627735066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33548,6 +34187,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1821000498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34162,7 +34825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1847243818}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35653,6 +36316,7 @@ GameObject:
   - component: {fileID: 1941159647}
   - component: {fileID: 1941159649}
   - component: {fileID: 1941159648}
+  - component: {fileID: 1941159650}
   m_Layer: 5
   m_Name: MushroomInteractNothingFound
   m_TagString: Untagged
@@ -35722,6 +36386,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941159646}
   m_CullTransparentMesh: 1
+--- !u!114 &1941159650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941159646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1941159646}
 --- !u!1 &1942603867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e07589cfd1004054893697e1d299bf84, type: 3}
@@ -35901,6 +36580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1950458660}
+  - component: {fileID: 1950458661}
   m_Layer: 5
   m_Name: DialogueScenes
   m_TagString: Untagged
@@ -35929,6 +36609,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1950458661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950458659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1950458659}
 --- !u!4 &1952408103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e370b28877cfeed448c3e4b9c50ed010, type: 3}
@@ -36322,7 +37017,8 @@ GameObject:
   - component: {fileID: 1974367153}
   - component: {fileID: 1974367155}
   - component: {fileID: 1974367154}
-  m_Layer: 0
+  - component: {fileID: 1974367156}
+  m_Layer: 7
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36400,6 +37096,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974367152}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &1974367156
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974367152}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1978179858
 GameObject:
@@ -37367,6 +38085,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 450650968}
+        m_TargetAssemblyTypeName: MouseLook, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 449206127}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2017409237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37553,6 +38295,7 @@ GameObject:
   - component: {fileID: 2033051472}
   - component: {fileID: 2033051474}
   - component: {fileID: 2033051473}
+  - component: {fileID: 2033051475}
   m_Layer: 5
   m_Name: StoneInteractFaeFound
   m_TagString: Untagged
@@ -37623,6 +38366,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033051471}
   m_CullTransparentMesh: 1
+--- !u!114 &2033051475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033051471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 2033051471}
 --- !u!1001 &2035716425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38620,15 +39378,27 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 462473075056931306, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 387919257}
+    - targetCorrespondingSourceObject: {fileID: 462473075056931306, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 387919261}
     - targetCorrespondingSourceObject: {fileID: 7631539999505063398, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1428839682}
+    - targetCorrespondingSourceObject: {fileID: 7631539999505063398, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428839686}
     - targetCorrespondingSourceObject: {fileID: -638455247573708437, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 837808012}
+    - targetCorrespondingSourceObject: {fileID: -638455247573708437, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 837808016}
     - targetCorrespondingSourceObject: {fileID: 7846941939602955740, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 954855896}
+    - targetCorrespondingSourceObject: {fileID: 7846941939602955740, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 954855900}
   m_SourcePrefab: {fileID: 100100000, guid: 85319eeaf407e304a9c8c87e17894df2, type: 3}
 --- !u!1001 &2077417870
 PrefabInstance:

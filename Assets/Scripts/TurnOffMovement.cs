@@ -8,7 +8,7 @@ public class TurnOffMovement : MonoBehaviour
     public GameObject firstPersonPlayer;
     public GameObject userInterface;
     
-    void OnEnable()
+    void Update()
     {
         if (userInterface != null)
         {
