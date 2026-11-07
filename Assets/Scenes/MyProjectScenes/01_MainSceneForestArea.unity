@@ -1631,6 +1631,7 @@ GameObject:
   - component: {fileID: 123396427}
   - component: {fileID: 123396429}
   - component: {fileID: 123396428}
+  - component: {fileID: 123396430}
   m_Layer: 5
   m_Name: WaterFaeSubmissionScreen
   m_TagString: Untagged
@@ -1698,6 +1699,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123396426}
   m_CullTransparentMesh: 1
+--- !u!114 &123396430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123396426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 123396426}
 --- !u!1 &140302240
 GameObject:
   m_ObjectHideFlags: 0
@@ -17807,6 +17823,7 @@ GameObject:
   - component: {fileID: 946285773}
   - component: {fileID: 946285775}
   - component: {fileID: 946285774}
+  - component: {fileID: 946285776}
   m_Layer: 5
   m_Name: EarthFaeSubmissionScreen
   m_TagString: Untagged
@@ -17874,6 +17891,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946285772}
   m_CullTransparentMesh: 1
+--- !u!114 &946285776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946285772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 946285772}
 --- !u!1 &948841994
 GameObject:
   m_ObjectHideFlags: 0
@@ -20844,7 +20876,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044379952}
-  - component: {fileID: 1044379953}
   m_Layer: 5
   m_Name: FaeSubmissionScreens
   m_TagString: Untagged
@@ -20875,21 +20906,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1044379953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1044379951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
-  mainCamera: {fileID: 450650963}
-  firstPersonPlayer: {fileID: 449206124}
-  userInterface: {fileID: 450650963}
 --- !u!1001 &1048755922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33770,6 +33786,7 @@ GameObject:
   - component: {fileID: 1798698654}
   - component: {fileID: 1798698656}
   - component: {fileID: 1798698655}
+  - component: {fileID: 1798698657}
   m_Layer: 5
   m_Name: ForestFaeSubmissionScreen
   m_TagString: Untagged
@@ -33837,6 +33854,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798698653}
   m_CullTransparentMesh: 1
+--- !u!114 &1798698657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798698653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1798698653}
 --- !u!1 &1807305414 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7699882618025355798, guid: 325b5f1b568a61a48b7fd61c76614d3b, type: 3}
@@ -34612,6 +34644,7 @@ GameObject:
   - component: {fileID: 1842831077}
   - component: {fileID: 1842831079}
   - component: {fileID: 1842831078}
+  - component: {fileID: 1842831080}
   m_Layer: 5
   m_Name: FireFaeSubmissionScreen
   m_TagString: Untagged
@@ -34679,6 +34712,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842831076}
   m_CullTransparentMesh: 1
+--- !u!114 &1842831080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842831076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
+  mainCamera: {fileID: 450650963}
+  firstPersonPlayer: {fileID: 449206124}
+  userInterface: {fileID: 1842831076}
 --- !u!1 &1844769490
 GameObject:
   m_ObjectHideFlags: 0
@@ -36580,7 +36628,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1950458660}
-  - component: {fileID: 1950458661}
   m_Layer: 5
   m_Name: DialogueScenes
   m_TagString: Untagged
@@ -36609,21 +36656,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1950458661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1950458659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2cc3bcbed730204db5fb12bf9327ce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TurnOffMovement
-  mainCamera: {fileID: 450650963}
-  firstPersonPlayer: {fileID: 449206124}
-  userInterface: {fileID: 1950458659}
 --- !u!4 &1952408103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e370b28877cfeed448c3e4b9c50ed010, type: 3}
