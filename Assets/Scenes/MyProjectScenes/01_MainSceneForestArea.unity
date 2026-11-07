@@ -6910,10 +6910,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
   interaction: {fileID: 1842831076}
   playerCheck: {fileID: 387919258}
-  playerDistance: 3.5
+  playerDistance: 2
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1 &390155410
 GameObject:
   m_ObjectHideFlags: 0
@@ -15644,10 +15644,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
   interaction: {fileID: 1798698653}
   playerCheck: {fileID: 837808013}
-  playerDistance: 0
+  playerDistance: 2
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1 &843585042
 GameObject:
   m_ObjectHideFlags: 0
@@ -18170,10 +18170,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
   interaction: {fileID: 946285772}
   playerCheck: {fileID: 954855897}
-  playerDistance: 0
+  playerDistance: 2
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1001 &956702568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28029,10 +28029,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CLickToInspect
   interaction: {fileID: 123396426}
   playerCheck: {fileID: 1428839683}
-  playerDistance: 3.5
+  playerDistance: 2
   playerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1 &1430609343
 GameObject:
   m_ObjectHideFlags: 0
