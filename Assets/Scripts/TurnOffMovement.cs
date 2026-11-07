@@ -15,16 +15,6 @@ public class TurnOffMovement : MonoBehaviour
             mainCamera.GetComponent<MouseLook>().enabled = false;
 
             firstPersonPlayer.GetComponent<PlayerMovement>().enabled = false;
-
-            Cursor.lockState = CursorLockMode.None;
-        }
-    }
-
-    void OnDisable()
-    {
-        if (userInterface == null)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
