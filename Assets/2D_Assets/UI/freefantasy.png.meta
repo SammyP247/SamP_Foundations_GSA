@@ -149,7 +149,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -158,6 +158,28 @@ TextureImporter:
       bones: []
       spriteID: b2687b480687eea4d86a66ba2947c9e0
       internalID: -232338524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuestionMark
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d905aefd12f324c4f9e04aacd660d365
+      internalID: 1191657046
       vertices: []
       indices: 
       edges: []
@@ -179,6 +201,7 @@ TextureImporter:
       Board: 771571323
       CloseButton: 1818219336
       NextButton: -232338524
+      QuestionMark: 1191657046
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
