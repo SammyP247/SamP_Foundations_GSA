@@ -5,14 +5,41 @@ public class DisableSeal : MonoBehaviour
     public GameObject seal;
     public GameObject waterFae;
     public GameObject fireFae;
-    public GameObject earthFae;
     public GameObject forestFae;
+    public GameObject earthFae;
+    
 
     void Update()
     {
-        if (waterFae != null)
+
+        int activeCount = 0;
+
+        if (waterFae != null && waterFae.activeSelf)
         {
-            seal.SetActive(false);
+            activeCount++;
+        }
+
+        if (fireFae != null && fireFae.activeSelf)
+        {
+            activeCount++;
+        }
+
+        if (forestFae != null && forestFae.activeSelf)
+        {
+            activeCount++;
+        }
+
+        if (earthFae != null && earthFae.activeSelf)
+        {
+            activeCount++;
+        }
+
+        if (activeCount >= 4)
+        {
+            if (seal.activeSelf)
+            {
+                seal.SetActive(false);
+            }
         }
     }
 }

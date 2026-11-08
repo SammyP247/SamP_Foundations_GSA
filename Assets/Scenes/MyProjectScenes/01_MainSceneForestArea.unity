@@ -3013,7 +3013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bd569ff04dd26804cbdc3873c07942b1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5910,7 +5910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 22d512a716e0f7445b4f6ae802ad09d1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15372,8 +15372,8 @@ MonoBehaviour:
   seal: {fileID: 803196314}
   waterFae: {fileID: 13776946}
   fireFae: {fileID: 348467788}
-  earthFae: {fileID: 1733163253}
   forestFae: {fileID: 187319142}
+  earthFae: {fileID: 1733163253}
 --- !u!1 &803628093
 GameObject:
   m_ObjectHideFlags: 0
@@ -33158,7 +33158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a4b3cee48301b374e898385ca544a8c0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
