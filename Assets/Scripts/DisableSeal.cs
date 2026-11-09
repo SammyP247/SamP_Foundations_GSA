@@ -7,6 +7,7 @@ public class DisableSeal : MonoBehaviour
     public GameObject fireFae;
     public GameObject forestFae;
     public GameObject earthFae;
+    public GameObject dialogue;
     
 
     void Update()
@@ -39,6 +40,11 @@ public class DisableSeal : MonoBehaviour
             if (seal.activeSelf)
             {
                 seal.SetActive(false);
+            }
+
+            if (!dialogue.activeSelf)
+            {
+                dialogue.SetActive(true);
             }
         }
     }
